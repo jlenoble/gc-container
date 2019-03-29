@@ -1,0 +1,53 @@
+{
+  "name": "gc-container",
+  "description": "Garbage collecting containers",
+  "version": "0.0.0",
+  "keywords": [],
+  "author": {
+    "name": "Jason Lenoble",
+    "email": "jason.lenoble@gmail.com"
+  },
+  "contributors": [],
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.9.0"
+  },
+  "main": "lib/gc-container.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jlenoble/gc-container.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jlenoble/gc-container/issues"
+  },
+  "homepage": "https://github.com/jlenoble/gc-container#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/register": "^7.4.0",
+    "autoreload-gulp": "^0.4.1",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "chai": "^4.2.0",
+    "del": "^4.0.0",
+    "eslint-config-google": "^0.12.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-mocha": "^6.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-wrap": "^0.14.0",
+    "markdown-include": "^0.4.3",
+    "muter": "^0.7.0",
+    "plumb-gulp": "^0.2.2"
+  },
+  "peerDependencies": {}
+}
