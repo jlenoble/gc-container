@@ -3,7 +3,7 @@ import {build} from './build';
 import {test} from './test';
 
 const allSrcGlob = [
-  'src/**/*.js',
+  'src/**/*.ts',
   'test/**/*.js',
   '!src/static/antlr4/parsers/**/*.js'
 ];

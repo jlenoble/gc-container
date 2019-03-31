@@ -5,7 +5,7 @@ import sourcemaps from 'gulp-sourcemaps';
 
 const buildDir = 'build';
 const allSrcGlob = [
-  'src/**/*.js',
+  'src/**/*.ts',
   'test/**/*.js'
 ];
 
