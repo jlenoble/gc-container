@@ -30,8 +30,20 @@
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-decorators": "^7.4.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
+    "@babel/preset-typescript": "^7.3.3",
     "@babel/register": "^7.4.0",
+    "@types/chai": "^4.1.7",
+    "@types/gulp": "^4.0.6",
+    "@types/gulp-babel": "^6.1.29",
+    "@types/gulp-mocha": "0.0.32",
+    "@types/gulp-rename": "0.0.33",
+    "@types/gulp-replace": "0.0.31",
+    "@types/gulp-sourcemaps": "0.0.32",
+    "@types/mocha": "^5.2.6",
     "autoreload-gulp": "^0.4.1",
     "babel-plugin-add-module-exports": "^1.0.0",
     "chai": "^4.2.0",
@@ -47,7 +59,8 @@
     "gulp-wrap": "^0.14.0",
     "markdown-include": "^0.4.3",
     "muter": "^0.7.0",
-    "plumb-gulp": "^0.2.2"
+    "plumb-gulp": "^0.2.2",
+    "typescript": "^3.3.4000"
   },
   "peerDependencies": {}
 }

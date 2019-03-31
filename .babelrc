@@ -4,9 +4,15 @@
       "targets": {
         "node": "current"
       }
-    }]
+    }],
+    "@babel/preset-typescript"
   ],
   "plugins": [
+		["@babel/proposal-decorators", {
+      "decoratorsBeforeExport": true
+    }],
+    "@babel/proposal-class-properties",
+		"@babel/proposal-object-rest-spread",
     "add-module-exports"
   ]
 }
