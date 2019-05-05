@@ -1,14 +1,17 @@
-import gulp from 'gulp';
-import mocha from 'gulp-mocha';
-import './build';
+import {src, task, series} from "gulp";
+import mocha from "gulp-mocha";
+
+import "./build";
 
 const testGlob = [
-  'build/test/**/*.test.js'
+  "build/test/**/*.test.js"
 ];
 
 export const test = () => {
-  return gulp.src(testGlob)
-    .pipe(mocha());
+  return src(testGlob, { read: false })
+    .pipe(mocha({
+      require: ["source-map-support/register"]
+    }));
 };
 
-gulp.task('test', gulp.series('build', test));
+task("test", series("build", test));

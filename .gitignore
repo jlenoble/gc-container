@@ -1,16 +1,15 @@
 # Build
 build
 
+# Dist
+lib
 
 # Test
 tmp
 temp
 scratch
 
-# Dist
-lib
-
-# Hide
+# Misc
 private
 
 # Logs
@@ -50,3 +49,4 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+

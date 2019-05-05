@@ -1,66 +1,77 @@
 {
   "name": "gc-container",
-  "description": "Garbage collecting containers",
   "version": "0.0.0",
-  "keywords": [],
-  "author": {
-    "name": "Jason Lenoble",
-    "email": "jason.lenoble@gmail.com"
-  },
-  "contributors": [],
-  "license": "MIT",
-  "engines": {
-    "node": ">=10.9.0"
-  },
+  "description": "Garbage collecting containers",
+  "keywords": [
+    "garbage",
+    "collect",
+    "container"
+  ],
   "main": "lib/gc-container.js",
   "files": [
     "lib"
   ],
-  "scripts": {
-    "test": "gulp test"
+  "types": "lib/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/jlenoble/gc-container/issues",
+    "email": ""
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Jason Lenoble",
+    "email": "jason.lenoble@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jlenoble/gc-container.git"
+    "url": "git+https://github.com/jlenoble/gc-container.git"
   },
-  "bugs": {
-    "url": "https://github.com/jlenoble/gc-container/issues"
+  "engines": {
+    "node": ">=10.9.0"
   },
-  "homepage": "https://github.com/jlenoble/gc-container#readme",
-  "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.4.0",
-    "@babel/plugin-proposal-class-properties": "^7.4.0",
-    "@babel/plugin-proposal-decorators": "^7.4.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.4.0",
-    "@babel/preset-env": "^7.4.2",
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
     "@babel/preset-typescript": "^7.3.3",
-    "@babel/register": "^7.4.0",
+    "@babel/register": "^7.4.4",
     "@types/chai": "^4.1.7",
     "@types/gulp": "^4.0.6",
     "@types/gulp-babel": "^6.1.29",
-    "@types/gulp-mocha": "0.0.32",
-    "@types/gulp-rename": "0.0.33",
-    "@types/gulp-replace": "0.0.31",
-    "@types/gulp-sourcemaps": "0.0.32",
-    "@types/mocha": "^5.2.6",
+    "@types/gulp-cached": "^0.0.31",
+    "@types/gulp-mocha": "^0.0.32",
+    "@types/gulp-newer": "^0.0.31",
+    "@types/gulp-rename": "^0.0.33",
+    "@types/gulp-replace": "^0.0.31",
+    "@types/gulp-sourcemaps": "^0.0.32",
+    "@types/gulp-typescript": "^2.13.0",
+    "@types/mocha": "^*",
+    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "@typescript-eslint/parser": "^1.7.0",
     "autoreload-gulp": "^0.4.1",
-    "babel-plugin-add-module-exports": "^1.0.0",
+    "babel-plugin-add-module-exports": "^1.0.2",
     "chai": "^4.2.0",
-    "del": "^4.0.0",
+    "del": "^4.1.1",
     "eslint-config-google": "^0.12.0",
-    "gulp": "^4.0.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "gc-iterator": "file:../gc-iterator",
+    "gulp": "^4.0.1",
     "gulp-babel": "^8.0.0",
+    "gulp-cached": "^1.1.1",
     "gulp-eslint": "^5.0.0",
     "gulp-mocha": "^6.0.0",
+    "gulp-newer": "^1.4.0",
     "gulp-rename": "^1.4.0",
     "gulp-replace": "^1.0.0",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-wrap": "^0.14.0",
+    "gulp-typescript": "^5.0.1",
+    "gulp-wrap": "^0.15.0",
     "markdown-include": "^0.4.3",
     "muter": "^0.7.0",
     "plumb-gulp": "^0.2.2",
-    "typescript": "^3.3.4000"
-  },
-  "peerDependencies": {}
+    "prettier": "^1.17.0",
+    "typescript": "^3.4.5"
+  }
 }
