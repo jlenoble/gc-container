@@ -8,7 +8,12 @@
         }
       }
     ],
-    "@babel/preset-typescript"
+    [
+      "@babel/preset-typescript",
+      {
+        "allExtensions": true
+      }
+    ]
   ],
   "plugins": [
     "@babel/plugin-proposal-class-properties",

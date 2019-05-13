@@ -28,6 +28,9 @@
   "engines": {
     "node": ">=10.9.0"
   },
+  "dependencies": {
+    "gc-iterator": "file:../gc-iterator"
+  },
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
@@ -37,6 +40,7 @@
     "@babel/preset-typescript": "^7.3.3",
     "@babel/register": "^7.4.4",
     "@types/chai": "^4.1.7",
+    "@types/eslint-plugin-prettier": "^2.2.0",
     "@types/gulp": "^4.0.6",
     "@types/gulp-babel": "^6.1.29",
     "@types/gulp-cached": "^0.0.31",
@@ -46,18 +50,18 @@
     "@types/gulp-replace": "^0.0.31",
     "@types/gulp-sourcemaps": "^0.0.32",
     "@types/gulp-typescript": "^2.13.0",
-    "@types/mocha": "^*",
-    "@typescript-eslint/eslint-plugin": "^1.7.0",
-    "@typescript-eslint/parser": "^1.7.0",
+    "@types/mocha": "^5.2.6",
+    "@types/prettier": "^1.16.3",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
     "autoreload-gulp": "^0.4.1",
     "babel-plugin-add-module-exports": "^1.0.2",
     "chai": "^4.2.0",
     "del": "^4.1.1",
     "eslint-config-google": "^0.12.0",
     "eslint-config-prettier": "^4.2.0",
-    "eslint-plugin-prettier": "^3.0.1",
-    "gc-iterator": "file:../gc-iterator",
-    "gulp": "^4.0.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-cached": "^1.1.1",
     "gulp-eslint": "^5.0.0",
@@ -71,7 +75,9 @@
     "markdown-include": "^0.4.3",
     "muter": "^0.7.0",
     "plumb-gulp": "^0.2.2",
-    "prettier": "^1.17.0",
+    "prettier": "^1.17.1",
     "typescript": "^3.4.5"
-  }
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {}
 }

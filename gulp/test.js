@@ -7,11 +7,11 @@ const testGlob = [
   "build/test/**/*.test.js"
 ];
 
-export const test = () => {
+export const handleTest = () => {
   return src(testGlob, { read: false })
     .pipe(mocha({
       require: ["source-map-support/register"]
     }));
 };
 
-task("test", series("build", test));
+task("test", series("build", handleTest));

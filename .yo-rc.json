@@ -1,9 +1,9 @@
 {
   "generator-wupjs": {
     "createdWith": "0.5.1",
-    "modifiedWith": "0.6.0-0",
+    "modifiedWith": "0.6.0-3",
     "createdOn": "2019-03-29T15:34:07.531Z",
-    "modifiedOn": "2019-05-05T13:17:36.485Z",
+    "modifiedOn": "2019-05-13T18:09:50.966Z",
     "gulp": true,
     "typescript": true,
     "jsx": false,
@@ -23,6 +23,8 @@
     "buildDir": "build",
     "docDir": "doc",
     "libDir": "lib",
-    "gulpDir": "gulp"
+    "gulpDir": "gulp",
+    "jupyter": false,
+    "antlr4": false
   }
 }

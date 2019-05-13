@@ -1,4 +1,4 @@
-import {src, dest, lastRun, task} from "gulp";
+import { src, dest, lastRun, task } from "gulp";
 import babel from "gulp-babel";
 import sourcemaps from "gulp-sourcemaps";
 import cached from "gulp-cached";
@@ -10,10 +10,10 @@ const srcGlob = [
   "test/**/*.ts"
 ];
 
-export const build = () => {
+export const handleBuild = () => {
   return src(srcGlob, {
     base: process.cwd(),
-    since: lastRun(build)
+    since: lastRun(handleBuild)
   })
     .pipe(newer(buildDir))
     .pipe(cached())
@@ -24,5 +24,7 @@ export const build = () => {
     }))
     .pipe(dest(buildDir));
 };
+
+const build = handleBuild;
 
 task("build", build);
